@@ -9,7 +9,7 @@ class Admin::OrdersController < ApplicationController
   end
   def show
     @order = Order.find(params[:id])
-    @product_list = @order.product_lists
+    @product_lists = @order.product_lists
   end
   def ship
     @order = Order.find(params[:id])
