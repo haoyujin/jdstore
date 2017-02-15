@@ -33,8 +33,39 @@
             </td>
           </tr>
         <% end %>
-        
+
       </tbody>
+    </table>
+
+    <div class="total group clearfix">
+      <h4 class="pull-right">
+        总计 <%= @order.total %> CNY
+      </h4>
+    </div>
+
+    <hr>
+
+    <h2>寄送资讯</h2>
+
+    <table class="table table-striped table-bordered">
+      <tbody>
+        <tr>
+          <td>订购人</td>
+        </tr>
+        <tr>
+          <td>
+            <%= @order.billing_name %> - <%= @order.billing_address %>
+          </td>
+        </tr>
+        <tr>
+          <td>收件人</td>
+        </tr>
+        <tr>
+          <td>
+            <%= @order.shipping_name %> - <%= @order.shipping_address %>
+          </td>
+        </tr>
+      </tobdy>
     </table>
   </div>
 </div>
